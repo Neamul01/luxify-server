@@ -12,4 +12,5 @@ export const ProductSchema = new mongoose.Schema({
   specification: String,
   additionalInfo: String,
   sizeGuide: String,
+  images: [String],
 });

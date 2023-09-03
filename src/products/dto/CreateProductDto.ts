@@ -10,4 +10,5 @@ export class CreateProductDto {
   readonly specification?: string;
   readonly additionalInfo?: string;
   readonly sizeGuide?: string;
+  readonly images: Array<string>;
 }

@@ -13,6 +13,7 @@ export type Product = {
   additionalInfo?: string;
   sizeGuide?: string;
   reviews?: Review[];
+  images: Array<string>;
 };
 
 export type Review = {
