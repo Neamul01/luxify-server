@@ -1,8 +1,9 @@
 export type Product = {
+  id?: string;
   name: string;
   description: string;
   colors: Array<string>;
-  rating: number;
+  rating?: number;
   sizes: Array<string>;
   quantity: number;
   category: string;
@@ -11,7 +12,7 @@ export type Product = {
   specification?: string;
   additionalInfo?: string;
   sizeGuide?: string;
-  reviews: Review[];
+  reviews?: Review[];
 };
 
 export type Review = {
