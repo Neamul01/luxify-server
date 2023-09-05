@@ -16,4 +16,8 @@ export class ProductsService {
     const newItem = new this.productModel(item);
     return await newItem.save();
   }
+
+  async delete(id: string): Promise<Product> {
+    return await this.productModel.findByIdAndRemove(id);
+  }
 }
