@@ -20,4 +20,8 @@ export class ProductsService {
   async delete(id: string): Promise<Product> {
     return await this.productModel.findByIdAndRemove(id);
   }
+
+  async findOneProduct(id: string) {
+    return await this.productModel.findById(id);
+  }
 }
